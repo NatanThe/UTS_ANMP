@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/itemGameFrag"
+        android:name="com.example.uts2.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.uts2.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_gameFragment"
+            app:destination="@id/itemGameFrag" />
+        <action
+            android:id="@+id/action_mainFragment_to_scheduleFragment"
+            app:destination="@id/itemScheduleFrag" />
+        <action
+            android:id="@+id/action_mainFragment_to_memberFragment"
+            app:destination="@id/itemMemberFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemMemberFrag"
+        android:name="com.example.uts2.MemberFragment"
+        android:label="fragment_member"
+        tools:layout="@layout/fragment_member" />
+    <fragment
+        android:id="@+id/itemScheduleFrag"
+        android:name="com.example.uts2.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" />
+</navigation>
