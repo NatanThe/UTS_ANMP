@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/itemGameFrag"
-        android:name="com.example.uts2.GameFragment"
+        android:name="com.example.uts2.viewmodel.GameFragment"
         android:label="fragment_game"
         tools:layout="@layout/fragment_game" />
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.uts2.MainFragment"
+        android:name="com.example.uts2.viewmodel.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -27,12 +27,12 @@
     </fragment>
     <fragment
         android:id="@+id/itemMemberFrag"
-        android:name="com.example.uts2.MemberFragment"
+        android:name="com.example.uts2.viewmodel.MemberFragment"
         android:label="fragment_member"
         tools:layout="@layout/fragment_member" />
     <fragment
         android:id="@+id/itemScheduleFrag"
-        android:name="com.example.uts2.ScheduleFragment"
+        android:name="com.example.uts2.viewmodel.ScheduleFragment"
         android:label="fragment_schedule"
         tools:layout="@layout/fragment_schedule" />
 </navigation>

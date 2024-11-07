@@ -1,4 +1,4 @@
-package com.example.uts2
+package com.example.uts2.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
+import com.example.uts2.R
 import com.example.uts2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

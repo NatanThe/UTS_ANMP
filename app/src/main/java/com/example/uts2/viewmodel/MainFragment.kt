@@ -1,4 +1,4 @@
-package com.example.uts2
+package com.example.uts2.viewmodel
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
