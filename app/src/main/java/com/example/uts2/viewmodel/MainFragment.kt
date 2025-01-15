@@ -34,7 +34,7 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnGame.setOnClickListener {
-            val action = MainFragmentDirections.actionMainFragmentToGameFragment()
+            val action = MainFragmentDirections.actionMainFragmentToGameListFragment()
             Navigation.findNavController(it).navigate(action)
 
         }
